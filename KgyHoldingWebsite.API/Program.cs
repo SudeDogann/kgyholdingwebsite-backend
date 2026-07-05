@@ -51,6 +51,9 @@ app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
+app.MapGet("/", () => "KGY Holding API is running.");
+app.MapGet("/health", () => Results.Ok(new { status = "OK" }));
+
 
 app.MapControllers();
 
