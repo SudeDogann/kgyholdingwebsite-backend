@@ -55,6 +55,7 @@ app.MapGet("/", () => "KGY Holding API is running.");
 app.MapGet("/health", () => Results.Ok(new { status = "OK" }));
 
 
+
 app.MapControllers();
 
 app.Run();
